@@ -4,6 +4,13 @@ const app = express()
 
 const PORT = 3000
 
+app.get ("/", (req,res) =>{
+    try{
+        res.send("Successful request")
+    }catch(err){
+        res.send("error")
+    }
+})
 
 
 app.listen(PORT, ()=>{
